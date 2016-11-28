@@ -19,11 +19,12 @@ Store the data in memory, not in a database, but bear in mind that you will late
 
 1. `git clone https://github.com/B-raw/database_server_techtest.git`
 2. `cd database_server_techtest`
-3. Create two database - one called `key_value_entry_development` and another called `key_value_entry_test`.
-4. Run the rspec/rack-test test suite using the instruction `rspec`
-5. Run using the command `rerun lib/app.rb`
-6. To add a key value pair to the server, send a post request to "http://localhost:4000/set?somekey=somevalue". To send a post request from your browser, you may want to get a chrome extension such as Advanced REST client.
-7. To get the value of your key back, send a get request to "http://localhost:4000/get?key=somekey"
+3. `bundle`
+4. Create two database - one called `key_value_entry_development` and another called `key_value_entry_test`.
+5. Run the rspec/rack-test test suite using the instruction `rspec`
+6. Run using the command `rerun lib/app.rb`
+7. To add a key value pair to the server, send a post request to "http://localhost:4000/set?somekey=somevalue". To send a post request from your browser, you may want to get a chrome extension such as Advanced REST client.
+8. To get the value of your key back, send a get request to "http://localhost:4000/get?key=somekey"
 
 ##Approach
 
