@@ -1,6 +1,6 @@
 # Database API techtest
 
-==Description
+##Description
 
 "Before your interview, write a program that runs a server that is accessible on http://localhost:4000/.
 
@@ -10,12 +10,12 @@ When it receives a request on http://localhost:4000/get?key=somekey it should re
 
 If you finish, you can work on saving the data to a file."
 
-==Instructions
+##Instructions
 
 Create a new git repository and write code to complete the brief to the best of your ability.
 Store the data in memory, not in a database, but bear in mind that you will later need to add a database to this code.
 
-==Installation
+##Installation
 
 1. `git clone https://github.com/B-raw/database_server_techtest.git`
 2. `cd database_server_techtest`
@@ -25,7 +25,7 @@ Store the data in memory, not in a database, but bear in mind that you will late
 6. To add a key value pair to the server, send a post request to "http://localhost:4000/set?somekey=somevalue". To send a post request from your browser, you may want to get a chrome extension such as Advanced REST client.
 7. To get the value of your key back, send a get request to "http://localhost:4000/get?key=somekey"
 
-==Approach
+##Approach
 
 Although the brief asked not to use a database, I felt this was impractical and not realistic. It also would have lead to poorer testing.
 
