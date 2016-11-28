@@ -16,15 +16,13 @@ describe "Setter Getter API" do
   it "can post a key value pair" do
     post '/set?somekey=somevalue'
     expect(last_response).to be_ok
-    expect(session[:key_entry]).to eq("somekey")
-    expect(session[:value_entry]).to eq("somevalue")
-    # expect(database_entry.value_entry).to eq("somevalue")
-    # database_entry = KeyValuePair.first
-    # expect(database_entry.key_entry).to eq("somekey")
-    # expect(database_entry.value_entry).to eq("somevalue")
+    database_entry = KeyValuePair.first
+    expect(database_entry.key_entry).to eq("somekey")
+    expect(database_entry.value_entry).to eq("somevalue")
   end
 
   it "can get a value for a key" do
+    post '/set?somekey=somevalue'
     get '/get?key=somekey'
     expect(last_response).to be_ok
     expect(last_response.body).to eq("somevalue")
